@@ -1,0 +1,265 @@
+[New LWP 594]
+[New LWP 599]
+[New LWP 627]
+[New LWP 752]
+[New LWP 753]
+[New LWP 754]
+[New LWP 755]
+[New LWP 756]
+[New LWP 757]
+[New LWP 758]
+[New LWP 759]
+[New LWP 760]
+[New LWP 862]
+[New LWP 863]
+[New LWP 864]
+[New LWP 865]
+[New LWP 866]
+[New LWP 867]
+[New LWP 868]
+[New LWP 882]
+[New LWP 921]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/arm-linux-gnueabihf/libthread_db.so.1".
+__GI___nanosleep (remaining=0xbe92a9c8, requested_time=0xbe92a9c8) at ../sysdeps/unix/sysv/linux/nanosleep.c:28
+28	../sysdeps/unix/sysv/linux/nanosleep.c: Bestand of map bestaat niet.
+  Id   Target Id                                     Frame 
+* 1    Thread 0xb6f46010 (LWP 593) "domoticz"        __GI___nanosleep (remaining=0xbe92a9c8, requested_time=0xbe92a9c8) at ../sysdeps/unix/sysv/linux/nanosleep.c:28
+  2    Thread 0xb59f1220 (LWP 594) "Watchdog"        __waitpid (options=0, stat_loc=0xb59f0380, pid=885) at ../sysdeps/unix/sysv/linux/waitpid.c:30
+  3    Thread 0xb51f0220 (LWP 599) "SQLHelper"       syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+  4    Thread 0xb49ef220 (LWP 627) "PluginMgr"       syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+  5    Thread 0xb3bc0220 (LWP 752) "InfluxPush"      syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+  6    Thread 0xb33bf220 (LWP 753) "Webem_ssncleane" 0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xb33be270, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+  7    Thread 0xb2bbe220 (LWP 754) "WebServer_8080"  0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xb2bbd320, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+  8    Thread 0xb21ff220 (LWP 755) "Webem_ssncleane" 0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xb21fe270, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+  9    Thread 0xb19fe220 (LWP 756) "WebServer_443"   0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xb19fd320, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+  10   Thread 0xb0fff220 (LWP 757) "Scheduler"       syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+  11   Thread 0xb07fe220 (LWP 758) "TCPServer"       0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xb07fd350, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+  12   Thread 0xafdff220 (LWP 759) "MainWorker"      __GI___libc_read (nbytes=4096, buf=0xa92145f0, fd=30) at ../sysdeps/unix/sysv/linux/read.c:26
+  13   Thread 0xaf5fe220 (LWP 760) "MainWorkerRxMsg" __libc_pwrite64 (offset=<optimized out>, count=4096, buf=0xaebc1f78, fd=6) at ../sysdeps/unix/sysv/linux/pwrite64.c:29
+  14   Thread 0xae9ff220 (LWP 862) "Philips Hue"     futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0xae9fe5f0, expected=0, futex_word=0xaebc3e40) at ../sysdeps/unix/sysv/linux/futex-internal.h:205
+  15   Thread 0xae1fe220 (LWP 863) "TP-Link HS110 w" syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+  16   Thread 0xad7ff220 (LWP 864) "TP-Link HS110 w" syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+  17   Thread 0xacffe220 (LWP 865) "TP-Link HS110  " syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+  18   Thread 0xac7fd220 (LWP 866) "Tado"            __GI___libc_read (nbytes=4096, buf=0xa9186498, fd=28) at ../sysdeps/unix/sysv/linux/read.c:26
+  19   Thread 0xabffc220 (LWP 867) "TP-Link HS110 v" syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+  20   Thread 0xab7fb220 (LWP 868) "Domoticz_HBWork" syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+  21   Thread 0xaaffa220 (LWP 882) "System Alive Ch" futex_wait_cancelable (private=0, expected=0, futex_word=0xaec162e0) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+  22   Thread 0xaa7f9220 (LWP 921) "PingerWorker"    0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xaa7f8208, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+
+Thread 22 (Thread 0xaa7f9220 (LWP 921)):
+#0  0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xaa7f8208, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x003cc8c8 in boost::asio::detail::epoll_reactor::run(long, boost::asio::detail::op_queue<boost::asio::detail::scheduler_operation>&) ()
+#2  0x003ce444 in boost::asio::detail::scheduler::run(boost::system::error_code&) ()
+#3  0x005b38dc in CPinger::Do_Ping_Worker(CPinger::PingNode const&) ()
+#4  0x00754c38 in thread_proxy ()
+#5  0xb6a6f494 in start_thread (arg=0xaa7f9220) at pthread_create.c:486
+#6  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 21 (Thread 0xaaffa220 (LWP 882)):
+#0  futex_wait_cancelable (private=0, expected=0, futex_word=0xaec162e0) at ../sysdeps/unix/sysv/linux/futex-internal.h:88
+#1  __pthread_cond_wait_common (abstime=0x0, mutex=0x0, cond=0xaec162b8) at pthread_cond_wait.c:502
+#2  __pthread_cond_wait (cond=0xaec162b8, mutex=0x0) at pthread_cond_wait.c:655
+#3  0x00756c3c in boost::condition_variable::wait(boost::unique_lock<boost::mutex>&) ()
+#4  0x00754d2c in boost::thread::join_noexcept() ()
+#5  0x005b1380 in CPinger::DoPingHosts() ()
+#6  0x005b1834 in CPinger::Do_Work() ()
+#7  0x008db9cc in execute_native_thread_routine ()
+#8  0xb6a6f494 in start_thread (arg=0xaaffa220) at pthread_create.c:486
+#9  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 20 (Thread 0xab7fb220 (LWP 868)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+#1  0x008b943c in std::__atomic_futex_unsigned_base::_M_futex_wait_until(unsigned int*, unsigned int, bool, std::chrono::duration<long long, std::ratio<1ll, 1ll> >, std::chrono::duration<long long, std::ratio<1ll, 1000000000ll> >) ()
+#2  0x00424104 in CDomoticzHardwareBase::Do_Heartbeat_Work() ()
+#3  0x008db9cc in execute_native_thread_routine ()
+#4  0xb6a6f494 in start_thread (arg=0xab7fb220) at pthread_create.c:486
+#5  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 19 (Thread 0xabffc220 (LWP 867)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+#1  0x008b943c in std::__atomic_futex_unsigned_base::_M_futex_wait_until(unsigned int*, unsigned int, bool, std::chrono::duration<long long, std::ratio<1ll, 1ll> >, std::chrono::duration<long long, std::ratio<1ll, 1000000000ll> >) ()
+#2  0x0066c68c in Plugins::CPlugin::Do_Work() ()
+#3  0x008db9cc in execute_native_thread_routine ()
+#4  0xb6a6f494 in start_thread (arg=0xabffc220) at pthread_create.c:486
+Backtrace stopped: Cannot access memory at address 0x41206d5c
+
+Thread 18 (Thread 0xac7fd220 (LWP 866)):
+#0  __GI___libc_read (nbytes=4096, buf=0xa9186498, fd=28) at ../sysdeps/unix/sysv/linux/read.c:26
+#1  __GI___libc_read (fd=28, buf=0xa9186498, nbytes=4096) at ../sysdeps/unix/sysv/linux/read.c:24
+#2  0xb68b5acc in _IO_new_file_underflow (fp=0xaebf0850) at libioP.h:839
+#3  0xb68b4b0c in __GI__IO_file_xsgetn (fp=0xaebf0850, data=<optimized out>, n=1494) at fileops.c:1329
+#4  0xb68a7e08 in __GI__IO_fread (buf=0xa9355c78, size=1, count=1494, fp=0xaebf0850) at iofread.c:38
+#5  0xb662b9a8 in ?? () from /usr/lib/arm-linux-gnueabihf/libgnutls.so.30
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 17 (Thread 0xacffe220 (LWP 865)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+#1  0x008b943c in std::__atomic_futex_unsigned_base::_M_futex_wait_until(unsigned int*, unsigned int, bool, std::chrono::duration<long long, std::ratio<1ll, 1ll> >, std::chrono::duration<long long, std::ratio<1ll, 1000000000ll> >) ()
+#2  0x0066c68c in Plugins::CPlugin::Do_Work() ()
+#3  0x008db9cc in execute_native_thread_routine ()
+#4  0xb6a6f494 in start_thread (arg=0xacffe220) at pthread_create.c:486
+Backtrace stopped: Cannot access memory at address 0x41206d5c
+
+Thread 16 (Thread 0xad7ff220 (LWP 864)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+#1  0x008b943c in std::__atomic_futex_unsigned_base::_M_futex_wait_until(unsigned int*, unsigned int, bool, std::chrono::duration<long long, std::ratio<1ll, 1ll> >, std::chrono::duration<long long, std::ratio<1ll, 1000000000ll> >) ()
+#2  0x0066c68c in Plugins::CPlugin::Do_Work() ()
+#3  0x008db9cc in execute_native_thread_routine ()
+#4  0xb6a6f494 in start_thread (arg=0xad7ff220) at pthread_create.c:486
+Backtrace stopped: Cannot access memory at address 0x41206d5c
+
+Thread 15 (Thread 0xae1fe220 (LWP 863)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+#1  0x008b943c in std::__atomic_futex_unsigned_base::_M_futex_wait_until(unsigned int*, unsigned int, bool, std::chrono::duration<long long, std::ratio<1ll, 1ll> >, std::chrono::duration<long long, std::ratio<1ll, 1000000000ll> >) ()
+#2  0x0066c68c in Plugins::CPlugin::Do_Work() ()
+#3  0x008db9cc in execute_native_thread_routine ()
+#4  0xb6a6f494 in start_thread (arg=0xae1fe220) at pthread_create.c:486
+Backtrace stopped: Cannot access memory at address 0x41206d5c
+
+Thread 14 (Thread 0xae9ff220 (LWP 862)):
+#0  futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0xae9fe5f0, expected=0, futex_word=0xaebc3e40) at ../sysdeps/unix/sysv/linux/futex-internal.h:205
+#1  __pthread_cond_wait_common (abstime=0xae9fe5f0, mutex=0x0, cond=0xaebc3e18) at pthread_cond_wait.c:539
+#2  __pthread_cond_timedwait (cond=0xaebc3e18, mutex=0x0, abstime=0xae9fe5f0) at pthread_cond_wait.c:667
+#3  0x0024cb64 in MainWorker::CheckAndPushRxMessage(CDomoticzHardwareBase const*, unsigned char const*, char const*, int, char const*, bool) ()
+#4  0x0024d1b4 in MainWorker::PushAndWaitRxMessage(CDomoticzHardwareBase const*, unsigned char const*, char const*, int, char const*) ()
+#5  0x005a2580 in CPhilipsHue::InsertUpdateSwitch(int, unsigned char, _eSwitchType, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned char) ()
+#6  0x005a6f88 in CPhilipsHue::GetSensors(Json::Value const&) ()
+#7  0x005a74d4 in CPhilipsHue::GetStates() ()
+#8  0x005a7708 in CPhilipsHue::Do_Work() ()
+#9  0x008db9cc in execute_native_thread_routine ()
+#10 0xb6a6f494 in start_thread (arg=0xae9ff220) at pthread_create.c:486
+#11 0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 13 (Thread 0xaf5fe220 (LWP 760)):
+#0  __libc_pwrite64 (offset=<optimized out>, count=4096, buf=0xaebc1f78, fd=6) at ../sysdeps/unix/sysv/linux/pwrite64.c:29
+#1  __libc_pwrite64 (fd=6, buf=0xaebc1f78, count=4096, offset=1895256) at ../sysdeps/unix/sysv/linux/pwrite64.c:27
+#2  0xb6e184ac in ?? () from /usr/lib/arm-linux-gnueabihf/libsqlite3.so.0
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 12 (Thread 0xafdff220 (LWP 759)):
+#0  __GI___libc_read (nbytes=4096, buf=0xa92145f0, fd=30) at ../sysdeps/unix/sysv/linux/read.c:26
+#1  __GI___libc_read (fd=30, buf=0xa92145f0, nbytes=4096) at ../sysdeps/unix/sysv/linux/read.c:24
+#2  0xb68b5acc in _IO_new_file_underflow (fp=0xaea5c3c0) at libioP.h:839
+#3  0xb68b4b0c in __GI__IO_file_xsgetn (fp=0xaea5c3c0, data=<optimized out>, n=1494) at fileops.c:1329
+#4  0xb68a7e08 in __GI__IO_fread (buf=0xa9d7d7f8, size=1, count=1494, fp=0xaea5c3c0) at iofread.c:38
+#5  0xb662b9a8 in ?? () from /usr/lib/arm-linux-gnueabihf/libgnutls.so.30
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 11 (Thread 0xb07fe220 (LWP 758)):
+#0  0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xb07fd350, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x003cc8c8 in boost::asio::detail::epoll_reactor::run(long, boost::asio::detail::op_queue<boost::asio::detail::scheduler_operation>&) ()
+#2  0x003ce444 in boost::asio::detail::scheduler::run(boost::system::error_code&) ()
+#3  0x006c1768 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<tcp::server::CTCPServer::StartServer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#1}> > >::_M_run() ()
+#4  0x008db9cc in execute_native_thread_routine ()
+#5  0xb6a6f494 in start_thread (arg=0xb07fe220) at pthread_create.c:486
+#6  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 10 (Thread 0xb0fff220 (LWP 757)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+#1  0x008b943c in std::__atomic_futex_unsigned_base::_M_futex_wait_until(unsigned int*, unsigned int, bool, std::chrono::duration<long long, std::ratio<1ll, 1ll> >, std::chrono::duration<long long, std::ratio<1ll, 1000000000ll> >) ()
+#2  0x0027e5b0 in CScheduler::Do_Work() ()
+#3  0x008db9cc in execute_native_thread_routine ()
+#4  0xb6a6f494 in start_thread (arg=0xb0fff220) at pthread_create.c:486
+#5  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 9 (Thread 0xb19fe220 (LWP 756)):
+#0  0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xb19fd320, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x003cc8c8 in boost::asio::detail::epoll_reactor::run(long, boost::asio::detail::op_queue<boost::asio::detail::scheduler_operation>&) ()
+#2  0x003ce444 in boost::asio::detail::scheduler::run(boost::system::error_code&) ()
+#3  0x00705e50 in http::server::server_base::run() ()
+#4  0x002cf3a8 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<http::server::CWebServer::StartServer(http::server::server_settings&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)::{lambda()#294}> > >::_M_run() ()
+#5  0x008db9cc in execute_native_thread_routine ()
+#6  0xb6a6f494 in start_thread (arg=0xb19fe220) at pthread_create.c:486
+#7  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 8 (Thread 0xb21ff220 (LWP 755)):
+#0  0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xb21fe270, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x003cc8c8 in boost::asio::detail::epoll_reactor::run(long, boost::asio::detail::op_queue<boost::asio::detail::scheduler_operation>&) ()
+#2  0x003ce444 in boost::asio::detail::scheduler::run(boost::system::error_code&) ()
+#3  0x006dc290 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<http::server::cWebem::cWebem(http::server::server_settings const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#2}> > >::_M_run() ()
+#4  0x008db9cc in execute_native_thread_routine ()
+#5  0xb6a6f494 in start_thread (arg=0xb21ff220) at pthread_create.c:486
+#6  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 7 (Thread 0xb2bbe220 (LWP 754)):
+#0  0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xb2bbd320, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x003cc8c8 in boost::asio::detail::epoll_reactor::run(long, boost::asio::detail::op_queue<boost::asio::detail::scheduler_operation>&) ()
+#2  0x003ce444 in boost::asio::detail::scheduler::run(boost::system::error_code&) ()
+#3  0x00705e50 in http::server::server_base::run() ()
+#4  0x002cf3a8 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<http::server::CWebServer::StartServer(http::server::server_settings&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool)::{lambda()#294}> > >::_M_run() ()
+#5  0x008db9cc in execute_native_thread_routine ()
+#6  0xb6a6f494 in start_thread (arg=0xb2bbe220) at pthread_create.c:486
+#7  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 6 (Thread 0xb33bf220 (LWP 753)):
+#0  0xb69229d0 in epoll_wait (epfd=<optimized out>, events=0xb33be270, maxevents=128, timeout=-1) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x003cc8c8 in boost::asio::detail::epoll_reactor::run(long, boost::asio::detail::op_queue<boost::asio::detail::scheduler_operation>&) ()
+#2  0x003ce444 in boost::asio::detail::scheduler::run(boost::system::error_code&) ()
+#3  0x006dc290 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<http::server::cWebem::cWebem(http::server::server_settings const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)::{lambda()#2}> > >::_M_run() ()
+#4  0x008db9cc in execute_native_thread_routine ()
+#5  0xb6a6f494 in start_thread (arg=0xb33bf220) at pthread_create.c:486
+#6  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 5 (Thread 0xb3bc0220 (LWP 752)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+#1  0x008b943c in std::__atomic_futex_unsigned_base::_M_futex_wait_until(unsigned int*, unsigned int, bool, std::chrono::duration<long long, std::ratio<1ll, 1ll> >, std::chrono::duration<long long, std::ratio<1ll, 1000000000ll> >) ()
+#2  0x0038ab9c in CInfluxPush::Do_Work() ()
+#3  0x008db9cc in execute_native_thread_routine ()
+#4  0xb6a6f494 in start_thread (arg=0xb3bc0220) at pthread_create.c:486
+#5  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 4 (Thread 0xb49ef220 (LWP 627)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+#1  0x008b943c in std::__atomic_futex_unsigned_base::_M_futex_wait_until(unsigned int*, unsigned int, bool, std::chrono::duration<long long, std::ratio<1ll, 1ll> >, std::chrono::duration<long long, std::ratio<1ll, 1000000000ll> >) ()
+#2  0x0066fb20 in Plugins::CPluginSystem::Do_Work() ()
+#3  0x008db9cc in execute_native_thread_routine ()
+#4  0xb6a6f494 in start_thread (arg=0xb49ef220) at pthread_create.c:486
+#5  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 3 (Thread 0xb51f0220 (LWP 599)):
+#0  syscall () at ../sysdeps/unix/sysv/linux/arm/syscall.S:37
+#1  0x008b943c in std::__atomic_futex_unsigned_base::_M_futex_wait_until(unsigned int*, unsigned int, bool, std::chrono::duration<long long, std::ratio<1ll, 1ll> >, std::chrono::duration<long long, std::ratio<1ll, 1000000000ll> >) ()
+#2  0x0029c820 in CSQLHelper::Do_Work() ()
+#3  0x008db9cc in execute_native_thread_routine ()
+#4  0xb6a6f494 in start_thread (arg=0xb51f0220) at pthread_create.c:486
+#5  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 2 (Thread 0xb59f1220 (LWP 594)):
+#0  __waitpid (options=0, stat_loc=0xb59f0380, pid=885) at ../sysdeps/unix/sysv/linux/waitpid.c:30
+#1  __waitpid (pid=885, stat_loc=0xb59f0380, options=0) at ../sysdeps/unix/sysv/linux/waitpid.c:25
+#2  0x002868cc in dumpstack_gdb(bool) ()
+#3  0x00286dd0 in signal_handler(int, siginfo_t*, void*) ()
+#4  <signal handler called>
+#5  raise (sig=10) at ../sysdeps/unix/sysv/linux/raise.c:50
+#6  0x0028709c in Do_Watchdog_Work() ()
+#7  0x008db9cc in execute_native_thread_routine ()
+#8  0xb6a6f494 in start_thread (arg=0xb59f1220) at pthread_create.c:486
+#9  0xb6922578 in ?? () at ../sysdeps/unix/sysv/linux/arm/clone.S:73 from /lib/arm-linux-gnueabihf/libc.so.6
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 1 (Thread 0xb6f46010 (LWP 593)):
+#0  __GI___nanosleep (remaining=0xbe92a9c8, requested_time=0xbe92a9c8) at ../sysdeps/unix/sysv/linux/nanosleep.c:28
+#1  __GI___nanosleep (requested_time=0xbe92a9c8, remaining=0xbe92a9c8) at ../sysdeps/unix/sysv/linux/nanosleep.c:25
+#2  0x0021cec8 in sleep_seconds(long) ()
+#3  0x001ae8c4 in main ()
+
+Main thread:
+#0  __GI___nanosleep (remaining=0xbe92a9c8, requested_time=0xbe92a9c8) at ../sysdeps/unix/sysv/linux/nanosleep.c:28
+#1  __GI___nanosleep (requested_time=0xbe92a9c8, remaining=0xbe92a9c8) at ../sysdeps/unix/sysv/linux/nanosleep.c:25
+#2  0x0021cec8 in sleep_seconds(long) ()
+#3  0x001ae8c4 in main ()
+[Inferior 1 (process 593) detached]
